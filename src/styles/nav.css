@@ -28,13 +28,10 @@ background-color: #000000c5;
 
 .btn_form::before{
     content: url('/src/img/chat-square-dots-fill.svg');
-    transition: 1s;
 }
 .btn_form:hover::before{
     display: none;
-    transition: 1s;
 }
 .btn_form:hover::after{
     content: url('/src/img/chat-square-dots-fill.svg');
-    transition: 1s;
 }

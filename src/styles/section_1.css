@@ -1,0 +1,32 @@
+.section_1{
+    min-height: 100vh ;
+    padding: 100px 0 0 50px;
+    background-image: url("/src/img/fondo.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section_1 ul{
+    display: flex;
+    gap: 0 10px;
+}
+.section_1 ul li{
+    color: var(--cl2);
+    border: 1px dotted var(--cl2);
+    border-radius: 30px;
+    padding: 5px 30px;
+}
+.section_1 ul li::before{
+    content: url("/src/img/check.png");
+
+}
+.titles{
+    font-size: 90px;
+    margin-top: 100px;
+    font-family: var(--fuente_ubutu);
+    
+}
+.subtitle_1{
+    width: 410px;
+    font-family: var(--fuente_ubutu);
+}

@@ -1,2 +1,13 @@
+:root{
+    /* Fuentes */
+    --fuente_ubutu: 'Ubuntu', sans-serif;
 
+    /* Colores */
+    --cl1: #000000;
+    --cl2: #FFFFFF;
+}
 
+ul, a, p{
+    list-style: none;
+    font-family: 'ubuntu', 'sans-serif';
+}

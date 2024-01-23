@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="/src/styles/nav.css">
+    <link rel="stylesheet" href="/src/styles/section_1.css">
+    <link rel="stylesheet" href="/src/styles/root.css">
+
+    <!-- CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <title>Universidad Icesi, estudia en una de las mejores universidades de Colombia</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg nav_bar ">
+    <nav class="navbar navbar-expand-lg nav_bar position-fixed w-100 z-3">
         <div class="container-fluid p-0">
         <div class="w-25">
             <a class="navbar-brand nav-logo d-flex" href="#">
@@ -48,12 +58,41 @@
             </button>
         </div>
     </div>
-</nav>
+    </nav>
 
 
 <!-- Section #1 -> #inicio  -->
-    <section>
-        <div></div>
+    <section class="d-flex section_1  w-100 h-100">
+        <div class="w-50 ps-5 pt-5 z-2">
+            <h1 class="text-white fw-bold titles">#UnPlusParaTuCarrera</h1>
+            <p class="subtitle_1 text-white fs-4"> En Icesi impulsamos <strong>las competencias</strong>
+                de la <strong>nueva generación de </strong>
+                <strong>prefionales </strong>con:
+            </p>
+           <ul>
+            <li class="d-flex align-items-center gap-3"><strong>Maestrías</strong></li>
+            <li class="d-flex align-items-center gap-3"><strong>Especializaciones</strong></li>
+           </ul>
+           <a href="" class="btn btn-light rounded-0 w-25">Explorar más</a>
+        </div>
+        <div class="w-50 pt-3 pe-5">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade z-1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/src/img/carrusel_1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/img/carrusel_2.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/img/carrusel_3.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/img/carrusel_4.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
       <!-- Scripts Bootstrap -->
