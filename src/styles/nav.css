@@ -1,0 +1,40 @@
+.nav_bar{
+height: 100px ;
+padding-left: 10px !important;
+background-color: #000000c5;
+}
+.item_nav{
+    height: 100px;
+}
+.item_nav ul li {
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+.item_nav ul li:hover{
+    background-color: #16168e;
+    transition: .5s;
+}
+.item_nav ul li a {
+    padding: 0 40px !important;
+}
+.divisor{
+    height: 100px;
+    color: #ffffff !important;
+}
+.nav-logo__img{
+    width: 200px;
+}
+
+.btn_form::before{
+    content: url('/src/img/chat-square-dots-fill.svg');
+    transition: 1s;
+}
+.btn_form:hover::before{
+    display: none;
+    transition: 1s;
+}
+.btn_form:hover::after{
+    content: url('/src/img/chat-square-dots-fill.svg');
+    transition: 1s;
+}
