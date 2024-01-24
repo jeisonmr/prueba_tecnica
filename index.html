@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
     <!-- Estilos CSS -->
+    <link rel="stylesheet" href="/src/styles/root.css">
     <link rel="stylesheet" href="/src/styles/nav.css">
     <link rel="stylesheet" href="/src/styles/section_1.css">
-    <link rel="stylesheet" href="/src/styles/root.css">
+    <link rel="stylesheet" href="/src/styles/section_2.css">
+    <link rel="stylesheet" href="/src/styles/section_3.css">
+    <link rel="stylesheet" href="/src/styles/section_4.css">
+    <link rel="stylesheet" href="/src/styles/section_5.css">
 
     <!-- CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -37,20 +41,20 @@
           <div class="collapse navbar-collapse item_nav" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 h-100 d-flex justify-content-end">
               <li class="nav-item h-100">
-                <a class="nav-link text-white active " aria-current="page" href="#">Inicio</a>
+                <a class="nav-link text-white active " aria-current="page" href="#un-plus-para-tu-carrera">Inicio</a>
               </li>
               <li class="nav-item h-100">
-                <a class="nav-link text-white " href="#">Liderazgo Transformacional</a>
+                <a class="nav-link text-white " href="#liderazgo-transformacional">Liderazgo Transformacional</a>
               </li>
               <li class="nav-item h-100">
-                <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-white" href="#analitica-digital-e-innovacion">
                   Analítica Digital e Innovación
                 </a>
               <li  class="nav-item h-100">
-                <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profundización Profesional</a>
+                <a class="nav-link text-white" href="#profundizacion-profesional">Profundización Profesional</a>
               </li>
               <li class="nav-item h-100">
-                <a class="nav-link text-white " aria-disabled="true">Productividad</a>
+                <a class="nav-link text-white "href="#productividad" >Productividad</a>
               </li>
             </ul>
             <button class="btn btn-primary rounded-0 h-100 w-25 btn_form" type="submit">
@@ -61,10 +65,10 @@
     </nav>
 
 
-<!-- Section #1 -> #inicio  -->
-    <section class="d-flex section_1  w-100 h-100">
-        <div class="w-50 ps-5 pt-5 z-2">
-            <h1 class="text-white fw-bold titles">#UnPlusParaTuCarrera</h1>
+    <!-- Section #1 => #UnPlusParaTuCarrera  -->
+    <section class="d-flex section_1  w-100 h-100" id="un-plus-para-tu-carrera">
+        <div class="w-50 z-2 position-relative">
+            <h1 class="text-white fw-bold titles z-2">#UnPlusParaTuCarrera</h1>
             <p class="subtitle_1 text-white fs-4"> En Icesi impulsamos <strong>las competencias</strong>
                 de la <strong>nueva generación de </strong>
                 <strong>prefionales </strong>con:
@@ -79,30 +83,249 @@
               <strong>Especializaciones</strong>
             </li>
            </ul>
-           <a href="#" class="rounded-0 w-25 btn_link">Explorar más</a>
-           
+           <a href="#liderazgo-transformacional" class="rounded-0 w-25 btn_link">Explorar más</a>
+           <a href="#liderazgo-transformacional" class="btn_link-down">
+
+           </a>
         </div>
-        <div class="w-50 pt-3 pe-5">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade z-1" data-bs-ride="carousel">
+        <div class="w-50 pt-3 pr-5 position-relative z-1">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade z-1 car-carrusel" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/src/img/carrusel_1.webp" class="d-block w-100" alt="...">
+                <img src="/src/img/carrusel/carrusel_1.webp" class="d-block w-100" alt="mujer sentada usando la laptop">
               </div>
               <div class="carousel-item">
-                <img src="/src/img/carrusel_2.webp" class="d-block w-100" alt="...">
+                <img src="/src/img/carrusel/carrusel_2.webp" class="d-block w-100" alt="grupo de personas mirando la latop">
               </div>
               <div class="carousel-item">
-                <img src="/src/img/carrusel_3.webp" class="d-block w-100" alt="...">
+                <img src="/src/img/carrusel/carrusel_3.webp" class="d-block w-100" alt="joven en el escritorio">
               </div>
               <div class="carousel-item">
-                <img src="/src/img/carrusel_4.webp" class="d-block w-100" alt="...">
+                <img src="/src/img/carrusel/carrusel_4.webp" class="d-block w-100" alt="dos mujeres conversando">
               </div>
             </div>
           </div>
         </div>
     </section>
 
-      <!-- Scripts Bootstrap -->
+
+    <!-- Section #2 => Liderazgo Transformacional -->
+    <section id="liderazgo-transformacional" class="section_2 d-flex position-relative">
+      <div class="w-30 sc-p1">
+        <h2 class="sec-title">Liderazgo Transformacional</h2>
+        <p class="sec-parrafo"> Está pensado para fomentar el
+          cambio y la creatividad, en este
+          proceso se busca influir, guiar e
+          inspirar a los colaboradores para
+          crear en conjunto cambios que ayuden
+          a impulsar el futuro de una organización
+        </p>
+        <a href="#" class="rounded-0 w-25 btn_link">Descubre los programas</a>
+      </div>
+      <div class="w-100 d-flex justify-content-center  gap-3 flex-column sc-p2">
+        
+        <h3>Caracteristicas</h3>
+        <main class=" d-flex gap-3 ">
+          <div class="card text-white bg_caract rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/proyectos.svg" class="card-img container-img" alt="Gestión de Proyectos">
+            <div class="container-title">
+              <h5 class="card-title">Gestión de Proyectos</h5>
+            </div>
+          </div>
+  
+          <div class="card text-white bg_caract rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/conflictos.svg" class="card-img container-img" alt="Gestión de Conflictos">
+            <div class="container-title">
+              <h5 class="card-title">Gestión de Conflictos</h5>
+            </div>
+          </div>
+  
+          <div class="card text-white bg_caract rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/tiempo.svg" class="card-img container-img" alt="Gestión del Tiempo">
+            <div class="container-title">
+              <h5 class="card-title">Gestión de del Tiempo</h5>
+            </div>
+          </div>
+  
+          <div class="card text-white bg_caract rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/creatividad.svg" class="card-img container-img" alt="Gestión del Tiempo">
+            <div class="container-title">
+              <h5 class="card-title">Creatividad</h5>
+            </div>
+          </div>
+        </main>
+
+      </div>
+
+
+      <div class="container-btn_link">
+        <a href="#un-plus-para-tu-carrera" class="btn_link-left-up"></a>
+        <a href="#analitica-digital-e-innovacion" class="btn_link-left-down"></a>
+      </div>
+    </section>
+
+
+    <!-- Section #3 => Analitica Digital e Innovación -->
+    <section id="analitica-digital-e-innovacion" class="section_3 d-flex position-relative">
+      <div class="w-30 sc-p1">
+        <h2 class="sec-title">Analitica Digital e Innovación</h2>
+        <p class="sec-parrafo"> Con la analítica digital se recopilan e interpretan datos, generando
+          información útil para la toma de decisiones, permitiendo mejorar e innovar
+          procesos.
+          
+        </p>
+        <a href="#" class="rounded-0 w-25 btn_link">Descubre los programas</a>
+      </div>
+      <div class="w-100 d-flex justify-content-center  gap-3 flex-column sc-p2">
+        
+        <h3>Caracteristicas</h3>
+        <main class=" d-flex gap-3 ">
+          <div class="card text-white bg-primary rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/creatividad.svg" class="card-img container-img" alt="Creatividad">
+            <div class="container-title">
+              <h5 class="card-title">Creatividad</h5>
+            </div>
+          </div>
+  
+          <div class="card text-white bg-primary rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/soluciones.svg" class="card-img container-img" alt="Solución de Problemas">
+            <div class="container-title">
+              <h5 class="card-title">Solución de Problemas</h5>
+            </div>
+          </div>
+  
+          <div class="card text-white bg-primary rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/toma-desiciones.svg" class="card-img container-img" alt="Toma de Decisiones">
+            <div class="container-title">
+              <h5 class="card-title">Toma de Decisiones</h5>
+            </div>
+          </div>
+  
+          <div class="card text-white bg-primary rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/pensamiento-critico.svg" class="card-img container-img" alt="Pensamiento Crítico">
+            <div class="container-title">
+              <h5 class="card-title">Pensamiento Crítico</h5>
+            </div>
+          </div>
+        </main>
+
+      </div>
+
+
+      <div class="container-btn_link">
+        <a href="#liderazgo-transformacional" class="btn_link-left-up"></a>
+        <a href="#profundizacion-profesional" class="btn_link-left-down"></a>
+      </div>
+    </section>
+
+    <!-- Section #4 => Profundización Profesional -->
+    <section id="profundizacion-profesional" class="section_4 d-flex position-relative">
+      <div class="w-30 sc-p1">
+        <h2 class="sec-title">Profundización Profesional</h2>
+        <p class="sec-parrafo"> En un mundo laboral demandante, es cada vez más necesario profesionales
+          especializados en su labor, siendo expertos en
+          el área que se desempeñan.
+        </p>
+        <a href="#" class="rounded-0 w-25 btn_link">Descubre los programas</a>
+      </div>
+      <div class="w-100 d-flex justify-content-center  gap-3 flex-column sc-p2">
+        
+        <h3>Caracteristicas</h3>
+        <main class=" d-flex gap-3 ">
+          <div class="card text-white bg-danger rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/toma-desiciones.svg" class="card-img container-img" alt="Toma de Decisiones">
+            <div class="container-title">
+              <h5 class="card-title">Toma de Decisiones</h5>
+            </div>
+          </div>
+
+          <div class="card text-white bg-danger rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/adaptarse.svg" class="card-img container-img" alt="Adaptarse al Cambio">
+            <div class="container-title">
+              <h5 class="card-title">Adaptarse al Cambio</h5>
+            </div>
+          </div>
+
+          <div class="card text-white bg-danger rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/productividad-personal.svg" class="card-img container-img" alt="Productividad Personal">
+            <div class="container-title">
+              <h5 class="card-title">Productividad Personal</h5>
+            </div>
+          </div>
+
+          <div class="card text-white bg-danger rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/pensamiento-critico.svg" class="card-img container-img" alt="Pensamiento Crítico">
+            <div class="container-title">
+              <h5 class="card-title">Pensamiento Crítico</h5>
+            </div>
+          </div>
+        </main>
+
+      </div>
+
+
+      <div class="container-btn_link">
+        <a href="#analitica-digital-e-innovacion" class="btn_link-left-up"></a>
+        <a href="#productividad" class="btn_link-left-down"></a>
+      </div>
+    </section>
+
+
+    <!-- Secti on #5 => Productividad -->
+    <section id="productividad" class="section_5 d-flex position-relative">
+      <div class="w-30 sc-p1">
+        <h2 class="sec-title">Productividad</h2>
+        <p class="sec-parrafo"> Es uno de los factores clave de cualquier organización. Alcanza tus objetivo
+          fomentando sinergias, incentivando la creatividad y
+         organizando estratégicamente.
+        </p>
+        <a href="#" class="rounded-0 w-25 btn_link">Descubre los programas</a>
+      </div>
+      <div class="w-100 d-flex justify-content-center  gap-3 flex-column sc-p2">
+        
+        <h3>Caracteristicas</h3>
+        <main class=" d-flex gap-3 ">
+          <div class="card text-white bg-info rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/planificacion.svg" class="card-img container-img" alt="Planificación">
+            <div class="container-title">
+              <h5 class="card-title">Planificación</h5>
+            </div>
+          </div>
+
+          <div class="card text-white bg-info rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/logro.svg" class="card-img container-img" alt="Orientación al logro">
+            <div class="container-title">
+              <h5 class="card-title">Orientación al logro</h5>
+            </div>
+          </div>
+
+          <div class="card text-white bg-info rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/cambio.svg" class="card-img container-img" alt="Gestión del cambio">
+            <div class="container-title">
+              <h5 class="card-title">Gestión del cambio</h5>
+            </div>
+          </div>
+
+          <div class="card text-white bg-info rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <img src="/src/img/icons/comunicacion-efectiva.svg" class="card-img container-img" alt="Comunicación efectuva">
+            <div class="container-title">
+              <h5 class="card-title">Comunicación efectuva</h5>
+            </div>
+          </div>
+        </main>
+
+      </div>
+
+
+      <div class="container-btn_link">
+        <a href="#profundizacion-profesional" class="btn_link-left-up"></a>
+        <a href="#calendario-de-eventos" class="btn_link-left-down"></a>
+      </div>
+    </section>
+
+
+
+    <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 

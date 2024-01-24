@@ -27,11 +27,22 @@ background-color: #000000c5;
 }
 
 .btn_form::before{
-    content: url('/src/img/chat-square-dots-fill.svg');
+    content: url('/src/img/icons/chat-square-dots-fill.svg');
+    animation: sms .5s;
+    /* position: absolute; */
 }
 .btn_form:hover::before{
     display: none;
 }
 .btn_form:hover::after{
-    content: url('/src/img/chat-square-dots-fill.svg');
+    content: url('/src/img/icons/chat-square-dots-fill.svg');
 }
+
+@keyframes sms {
+    0%{
+        transform: translateY(0);
+    }
+    100% {
+      transform:  translateY(100px) !important;
+      }
+    }

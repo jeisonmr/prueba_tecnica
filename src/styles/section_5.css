@@ -1,0 +1,13 @@
+.section_5{
+    min-height: 100vh ;
+    /* padding: 100px 0 0 0; */
+    background-image: url('/src/img/wallpapers/fondo-5.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* .bg_caract{
+    background-color: #fe810b !important;
+} */

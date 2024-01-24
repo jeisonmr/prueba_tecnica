@@ -1,50 +1,135 @@
-:root{
-    /* Fuentes */
-    --fuente_ubutu: 'Ubuntu', sans-serif;
+:root {
+  /* Fuentes */
+  --fuente_ubutu: "Ubuntu", sans-serif;
 
-    /* Colores */
-    --cl1: #000000;
-    --cl2: #FFFFFF;
-    --cl3: #16168e;
-    --cl4: #b7b7dc;
+  /* Colores */
+  --cl1: #000000;
+  --cl2: #ffffff;
+  --cl3: #16168e;
+  --cl4: #b7b7dc;
+  --cl5: #000000a2;
+  --cl6: #81818165;
+  --cl7: #00000065;
 }
 
-ul, a, p{
-    list-style: none;
-    /* font-family: 'ubuntu', 'sans-serif'; */
+ul,
+a,
+p {
+  list-style: none;
+  /* font-family: 'ubuntu', 'sans-serif'; */
 }
 
-.btn_link{
-    background-color: var(--cl2);
-    text-decoration: none;
-    padding: 20px 60px;
-    transition: .5s;
+/* Boton llamado a la acción por sección */
+.btn_link {
+  background-color: var(--cl2);
+  text-decoration: none;
+  padding: 20px 60px;
+  transition: 0.5s;
+  font-family: var(--fuente_ubutu);
+  font-weight: 800;
+  color: var(--cl3);
+}
+
+.btn_link:hover {
+  background-color: var(--cl3);
+  color: var(--cl2);
+  transition: 0.5s;
+}
+.btn_link::before {
+  content: url("/src/img/icons/arrow-right.svg");
+  vertical-align: -5px;
+  padding-right: 10px;
+}
+.btn_link::after {
+  content: url("/src/img/icons/arrow-right.svg");
+  vertical-align: -5px;
+  padding-right: 10px;
+  display: none;
+}
+.btn_link:hover:hover::before {
+  display: none;
+}
+.btn_link:hover::after {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+/* Botones laterales up and down */
+
+.btn_link-left-up {
+  background-color: var(--cl6);
+  padding: 45px 45px;
+  transition: 0.5s;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.btn_link-left-down {
+    background-color: var(--cl6);
+    padding: 45px 45px;
+    transition: 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.btn_link-left-up {
+    background-image: url("/src/img/icons/arrow-up.svg");
+}
+.btn_link-left-down {
+    background-image: url("/src/img/icons/arrow-down.svg");
+}
+.btn_link-left-up:hover , .btn_link-left-down:hover{
+    transition: 0.5s;
+    background-color: transparent;
+  }
+
+/* Estilos para secciones similares #2 - #4 */
+
+.sec-title {
+  font-family: var(--fuente_ubutu);
+  font-size: 60px;
+  font-weight: 800;
+  padding-bottom: 30px;
+  color: var(--cl2);
+}
+.sec-parrafo {
+  width:550px;
+  font-family: var(--fuente_ubutu);
+  color: var(--cl2);
+  padding-bottom: 30px;
+}
+.sc-p1 {
+  padding: 300px 20px 0 200px;
+  background: var(--cl7)
+}
+.container-btn_link{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    position: absolute;
+    top: 45%;
+}
+
+/* Cuadros de Caracteristicas */
+.carac-card{
+    width: 200px;
+    height: 150px !important;
+    padding: 30px;
+}
+.container-img{
+    width: 33px !important;
+}
+.container-title{
+    width: 110px;
+    text-align: center;
+}
+.container-title h5{
+    font-weight: 100;
+    font-size: 17px;
+}
+.sc-p2{
+    padding-left: 5%;
+}
+.sc-p2 h3{
     font-family: var(--fuente_ubutu);
-    font-weight: 800;
-    color: var(--cl3);
-}
-
-.btn_link:hover{
-    background-color: var(--cl3);
     color: var(--cl2);
-    transition: .5s;
-}
-.btn_link::before{
-    content: url('/src/img/arrow-right.svg');
-    vertical-align: -5px;
-    padding-right: 10px;
-}
-.btn_link::after{
-    content: url('/src/img/arrow-right.svg');
-    vertical-align: -5px;
-    padding-right: 10px;
-    display: none;
-}
-.btn_link:hover:hover::before{
-    display: none;
-}
-.btn_link:hover::after{
-    display: inline;
-    padding-left: 10px;
-    padding-right: 0;
 }
