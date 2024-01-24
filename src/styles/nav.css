@@ -12,7 +12,7 @@ background-color: #000000c5;
     transition: .5s;
 }
 .item_nav ul li:hover{
-    background-color: #16168e;
+    background-color: var(--cl3);
     transition: .5s;
 }
 .item_nav ul li a {

@@ -5,9 +5,46 @@
     /* Colores */
     --cl1: #000000;
     --cl2: #FFFFFF;
+    --cl3: #16168e;
+    --cl4: #b7b7dc;
 }
 
 ul, a, p{
     list-style: none;
-    font-family: 'ubuntu', 'sans-serif';
+    /* font-family: 'ubuntu', 'sans-serif'; */
+}
+
+.btn_link{
+    background-color: var(--cl2);
+    text-decoration: none;
+    padding: 20px 60px;
+    transition: .5s;
+    font-family: var(--fuente_ubutu);
+    font-weight: 800;
+    color: var(--cl3);
+}
+
+.btn_link:hover{
+    background-color: var(--cl3);
+    color: var(--cl2);
+    transition: .5s;
+}
+.btn_link::before{
+    content: url('/src/img/arrow-right.svg');
+    vertical-align: -5px;
+    padding-right: 10px;
+}
+.btn_link::after{
+    content: url('/src/img/arrow-right.svg');
+    vertical-align: -5px;
+    padding-right: 10px;
+    display: none;
+}
+.btn_link:hover:hover::before{
+    display: none;
+}
+.btn_link:hover::after{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 0;
 }
