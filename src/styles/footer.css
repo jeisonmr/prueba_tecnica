@@ -42,7 +42,7 @@
     transition: transform 0.3s ease-in-out;
 }
 .social-btn:hover{
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 .ft-p2{
     padding: 30px;
@@ -52,3 +52,5 @@
 .ft-p2 span{
     font-size: 10px;
 }
+
+
