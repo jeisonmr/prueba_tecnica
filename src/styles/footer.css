@@ -39,6 +39,10 @@
     background-color: #3c3ca1 !important;
     border-radius: 50% !important;
     border: none !important;
+    transition: transform 0.3s ease-in-out;
+}
+.social-btn:hover{
+    transform: scale(1.02);
 }
 .ft-p2{
     padding: 30px;
