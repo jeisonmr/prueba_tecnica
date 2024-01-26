@@ -1,0 +1,175 @@
+/* estilos de todas las secciones entre la #2 - #5 */
+.sc_all{
+    width: 100%;
+    height: auto;
+    min-height: 100vh ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .section_2,.section_3,.section_4,.section_5{
+        flex-direction: column;
+        gap: 100px 0;
+    }
+    .sec-title{
+        font-size: 30px;
+    }
+    .sc-p1{
+        padding: 50px !important;
+    }
+}
+@media (max-width: 425px){
+    .section_2,.section_3,.section_4,.section_5{
+        flex-direction: column;
+        gap: 50px 0;
+    }
+    .sec-title{
+        font-size: 30px;
+    }
+    .sc-p1{
+        padding: 50px !important;
+    }
+    .sc-p2{
+        padding: 120px;
+    }
+    .sec-parrafo{
+        width: 90%;
+    }
+}
+
+
+/* Secci+on #1  =>  #UnPlusParaTuCarrera*/
+.section_1{
+    min-height: 100% ;
+    padding: 100px 0 0 50px;
+    background-image: url("/src/img/wallpapers/fondo_1.webp");
+}
+.section_1 ul{
+    display: flex;
+    gap: 0 10px;
+}
+.section_1 ul li{
+    color: var(--cl2);
+    border: 1px dotted var(--cl2);
+    border-radius: 30px;
+    padding: 5px 40px 5px 10px;
+}
+.titles{
+    font-size: 100px;
+    margin-top: 100px;
+    font-family: var(--fuente_ubutu);
+    
+}
+.subtitle_1{
+    width: 410px;
+    font-family: var(--fuente_ubutu);
+}
+
+
+/* Boton Link Down */
+
+.btn_link-down{
+    background-color: var(--cl6);
+    padding: 45px 45px;
+    transition: .5s;
+    background-image: url('/src/img/icons/arrow-down.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
+.btn_link-down:hover{
+    background-color: var(--cl5);
+}
+.car-carrusel{
+    position: absolute;
+    bottom: 0;
+    margin-right: 30px;
+    z-index: 50;
+}
+
+@media (max-width: 768px) {
+    .section_1{
+        width: 100% !important;
+        flex-direction: column;
+        height: 1000px;
+    }
+    .titles{
+        font-size: 50px;
+    }
+    .subtitle_1{
+        width: 350px;
+    }
+    .car-carrusel{
+      display: none;
+    }
+    .btn_link-down{
+        right: 0;
+        bottom: -400px;
+    }
+    .pt-3{
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .section_1{
+        width: 425px !important;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .titles{
+        font-size: 30px;
+    }
+    .subtitle_1{
+        width: 350px;
+    }
+    .car-carrusel{
+      display: none;
+    }
+    .btn_link-down{
+        right: 0;
+        bottom: -300px;
+    }
+    .pt-3{
+        display: none;
+    }
+    .section_1 ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* Sección #2 => Liderazgo Transformacional */
+.section_2{
+    background-image: url('/src/img/wallpapers/fondo-2.webp');
+}
+/* Color de fondo para los cuadros de la sección #2 */
+.bg_caract{
+    background-color: #fe810b !important;
+}
+
+
+/* Sección #3 => Analitica Digital e Innovación */
+.section_3{
+    background-image: url('/src/img/wallpapers/fondo-3.webp');
+}
+
+/* Sección #4 => Profundización Profesional */
+.section_4{
+    background-image: url('/src/img/wallpapers/fondo-4.webp');
+}
+
+/* Sección #5 => Productividad */
+.section_5{
+    background-image: url('/src/img/wallpapers/fondo-5.webp');
+}
+
+
+

@@ -8,13 +8,8 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="/src/styles/root.css">
     <link rel="stylesheet" href="/src/styles/nav.css">
-    <link rel="stylesheet" href="/src/styles/section_1.css">
-    <link rel="stylesheet" href="/src/styles/section_2.css">
-    <link rel="stylesheet" href="/src/styles/section_3.css">
-    <link rel="stylesheet" href="/src/styles/section_4.css">
-    <link rel="stylesheet" href="/src/styles/section_5.css">
+    <link rel="stylesheet" href="/src/styles/globalSections.css">
     <link rel="stylesheet" href="/src/styles/footer.css">
-    <link rel="stylesheet" href="/src/styles/calendario.css">
 
     <!-- CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -29,48 +24,49 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg nav_bar position-fixed w-100 z-3">
-        <div class="container-fluid p-0">
-        <div class="w-25">
-            <a class="navbar-brand nav-logo d-flex" href="#">
-                <span class="text-white fs-1 fw-bold">Posgrados</span>
-                <span class="text-white fs-1 fw-100"> |<span>
-                <img class="nav-logo__img" src="src/img/home-logo.png" alt="">
-            </a>
-        </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse item_nav" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 h-100 d-flex justify-content-end">
-              <li class="nav-item h-100">
-                <a class="nav-link text-white active " aria-current="page" href="#un-plus-para-tu-carrera">Inicio</a>
-              </li>
-              <li class="nav-item h-100">
-                <a class="nav-link text-white " href="#liderazgo-transformacional">Liderazgo Transformacional</a>
-              </li>
-              <li class="nav-item h-100">
-                <a class="nav-link text-white" href="#analitica-digital-e-innovacion">
-                  Analítica Digital e Innovación
-                </a>
-              <li  class="nav-item h-100">
-                <a class="nav-link text-white" href="#profundizacion-profesional">Profundización Profesional</a>
-              </li>
-              <li class="nav-item h-100">
-                <a class="nav-link text-white "href="#productividad" >Productividad</a>
-              </li>
-            </ul>
-            <button class="btn btn-primary rounded-0 h-100 w-25 btn_form" type="submit">
-                    Solicitar Información
+    <header>
+      <nav class="navbar navbar-expand-lg nav_bar position-fixed w-100 z-3">
+          <div class="container-fluid p-0">
+          <div class="w-25">
+              <a class="navbar-brand nav-logo d-flex" href="#">
+                  <span class="text-white fs-1 fw-bold">Posgrados</span>
+                  <span class="text-white fs-1 fw-100"> |<span>
+                  <img class="nav-logo__img" src="src/img/home-logo.png" alt="">
+              </a>
+          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-    </div>
-    </nav>
-
+            <div class="collapse navbar-collapse item_nav" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 h-100 d-flex justify-content-end nav_bar_items">
+                <li class="nav-item h-100">
+                  <a class="nav-link text-white active " aria-current="page" href="#un-plus-para-tu-carrera">Inicio</a>
+                </li>
+                <li class="nav-item h-100">
+                  <a class="nav-link text-white " href="#liderazgo-transformacional">Liderazgo Transformacional</a>
+                </li>
+                <li class="nav-item h-100">
+                  <a class="nav-link text-white" href="#analitica-digital-e-innovacion">
+                    Analítica Digital e Innovación
+                  </a>
+                <li  class="nav-item h-100">
+                  <a class="nav-link text-white" href="#profundizacion-profesional">Profundización Profesional</a>
+                </li>
+                <li class="nav-item h-100">
+                  <a class="nav-link text-white "href="#productividad" >Productividad</a>
+                </li>
+              </ul>
+              <button class="btn btn-primary rounded-0 h-100 w-25 btn_form" type="submit">
+                      Solicitar Información
+              </button>
+          </div>
+      </div>
+      </nav>
+    </header>
 
     <!-- Section #1 => #UnPlusParaTuCarrera  -->
-    <section class="d-flex section_1  w-100 h-100" id="un-plus-para-tu-carrera">
-        <div class="w-50 z-2 position-relative">
+    <section class="section_1 sc_all row" id="un-plus-para-tu-carrera">
+        <div class="w-50 z-2 position-relative col-6 col-md-12">
             <h1 class="text-white fw-bold titles z-2">#UnPlusParaTuCarrera</h1>
             <p class="subtitle_1 text-white fs-4"> En Icesi impulsamos <strong>las competencias</strong>
                 de la <strong>nueva generación de </strong>
@@ -91,7 +87,7 @@
 
            </a>
         </div>
-        <div class="w-50 pt-3 pr-5 position-relative z-1">
+        <div class="w-50 pt-3 pr-5 position-relative z-1 col-6 col-md-12">
           <div id="carouselExampleFade" class="carousel slide carousel-fade z-1 car-carrusel" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -113,7 +109,7 @@
 
 
     <!-- Section #2 => Liderazgo Transformacional -->
-    <section id="liderazgo-transformacional" class="section_2 d-flex position-relative">
+    <section id="liderazgo-transformacional" class="section_2 sc_all d-flex position-relative">
       <div class="w-30 sc-p1">
         <h2 class="sec-title">Liderazgo Transformacional</h2>
         <p class="sec-parrafo"> Está pensado para fomentar el
@@ -128,7 +124,7 @@
       <div class="w-100 d-flex justify-content-center  gap-3 flex-column sc-p2">
         
         <h3>Caracteristicas</h3>
-        <main class=" d-flex gap-3 ">
+        <main class=" d-flex gap-3 flex-wrap">
           <div class="card text-white bg_caract rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
             <img src="/src/img/icons/proyectos.svg" class="card-img container-img" alt="Gestión de Proyectos">
             <div class="container-title">
@@ -169,7 +165,7 @@
 
 
     <!-- Section #3 => Analitica Digital e Innovación -->
-    <section id="analitica-digital-e-innovacion" class="section_3 d-flex position-relative">
+    <section id="analitica-digital-e-innovacion" class="section_3 sc_all d-flex position-relative">
       <div class="w-30 sc-p1">
         <h2 class="sec-title">Analitica Digital e Innovación</h2>
         <p class="sec-parrafo"> Con la analítica digital se recopilan e interpretan datos, generando
@@ -182,7 +178,7 @@
       <div class="w-100 d-flex justify-content-center  gap-3 flex-column sc-p2">
         
         <h3>Caracteristicas</h3>
-        <main class=" d-flex gap-3 ">
+        <main class=" d-flex gap-3 flex-wrap">
           <div class="card text-white bg-primary rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
             <img src="/src/img/icons/creatividad.svg" class="card-img container-img" alt="Creatividad">
             <div class="container-title">
@@ -222,7 +218,7 @@
     </section>
 
     <!-- Section #4 => Profundización Profesional -->
-    <section id="profundizacion-profesional" class="section_4 d-flex position-relative">
+    <section id="profundizacion-profesional" class="section_4 sc_all d-flex position-relative">
       <div class="w-30 sc-p1">
         <h2 class="sec-title">Profundización Profesional</h2>
         <p class="sec-parrafo"> En un mundo laboral demandante, es cada vez más necesario profesionales
@@ -234,7 +230,7 @@
       <div class="w-100 d-flex justify-content-center  gap-3 flex-column sc-p2">
         
         <h3>Caracteristicas</h3>
-        <main class=" d-flex gap-3 ">
+        <main class=" d-flex gap-3 flex-wrap">
           <div class="card text-white bg-danger rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
             <img src="/src/img/icons/toma-desiciones.svg" class="card-img container-img" alt="Toma de Decisiones">
             <div class="container-title">
@@ -275,7 +271,7 @@
 
 
     <!-- Secti on #5 => Productividad -->
-    <section id="productividad" class="section_5 d-flex position-relative">
+    <section id="productividad" class="section_5 sc_all d-flex position-relative">
       <div class="w-30 sc-p1">
         <h2 class="sec-title">Productividad</h2>
         <p class="sec-parrafo"> Es uno de los factores clave de cualquier organización. Alcanza tus objetivo
@@ -287,7 +283,7 @@
       <div class="w-100 d-flex justify-content-center  gap-3 flex-column sc-p2">
         
         <h3>Caracteristicas</h3>
-        <main class=" d-flex gap-3 ">
+        <main class=" d-flex gap-3 flex-wrap">
           <div class="card text-white bg-info rounded-0 carac-card d-flex flex-column justify-content-center align-items-center gap-4">
             <img src="/src/img/icons/planificacion.svg" class="card-img container-img" alt="Planificación">
             <div class="container-title">
@@ -332,11 +328,12 @@
         
       <div id="carouselExampleControls" class="carousel carousel-dark slide " data-bs-ride="carousel">
       <div class="carousel-inner">
-      <h2 style="color:var(--cl3)" class="pb-3">Calendario de eventos</h2>
+      <h2 style="color:var(--cl3)" class="pb-3 carousel-title">Calendario de eventos</h2>
+      
       <div class="carousel-item active">
   
       <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-nt">
               <div class="card rounded-0 p-3" >
                 <span class="position-absolute top-0 text-white" style="right: 0; background: #f0b135; padding: 10px 20px">24 agosto, 2022</span>
                 <img src="/src/img/carrusel/noticia1.png" class="card-img-top rounded-0" alt="...">
@@ -349,7 +346,7 @@
             </div>
           </div>
               
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-nt">
               <div class="card rounded-0 p-3" >
                 <span class="position-absolute top-0 text-white" style="right: 0; background: #f0b135; padding: 10px 20px">23 agosto, 2022</span>
                 <img src="/src/img/carrusel/noticia2.png" class="card-img-top rounded-0" alt="...">
@@ -362,7 +359,7 @@
             </div>
           </div>
               
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-nt">
               <div class="card rounded-0 p-3" >
                 <span class="position-absolute top-0 text-white" style="right: 0; background: #f0b135; padding: 10px 20px">24 agosto, 2022</span>
                 <img src="/src/img/carrusel/noticia3.png" class="card-img-top rounded-0" alt="...">
@@ -375,7 +372,7 @@
             </div>
           </div>
               
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-nt">
             <div class="card rounded-0 p-3" >
               <span class="position-absolute top-0 text-white" style="right: 0; background: #f0b135; padding: 10px 20px">26 agosto, 2022</span>
               <img src="/src/img/carrusel/noticia4.png" class="card-img-top rounded-0" alt="...">
@@ -392,7 +389,7 @@
   
       <div class="carousel-item">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-nt">
               <div class="card rounded-0 p-3" >
                 <span class="position-absolute top-0 text-white" style="right: 0; background: #f0b135; padding: 10px 20px">24 agosto, 2022</span>
                 <img src="/src/img/carrusel/noticia1.png" class="card-img-top rounded-0" alt="...">
@@ -405,7 +402,7 @@
             </div>
           </div>
               
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-nt">
               <div class="card rounded-0 p-3" >
                 <span class="position-absolute top-0 text-white" style="right: 0; background: #f0b135; padding: 10px 20px">23 agosto, 2022</span>
                 <img src="/src/img/carrusel/noticia2.png" class="card-img-top rounded-0" alt="...">
@@ -418,7 +415,7 @@
             </div>
           </div>
               
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-nt">
               <div class="card rounded-0 p-3" >
                 <span class="position-absolute top-0 text-white" style="right: 0; background: #f0b135; padding: 10px 20px">24 agosto, 2022</span>
                 <img src="/src/img/carrusel/noticia3.png" class="card-img-top rounded-0" alt="...">
@@ -431,7 +428,7 @@
             </div>
           </div>
   
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-nt">
             <div class="card rounded-0 p-3" >
               <span class="position-absolute top-0 text-white" style="right: 0; background: #f0b135; padding: 10px 20px">26 agosto, 2022</span>
               <img src="/src/img/carrusel/noticia4.png" class="card-img-top rounded-0" alt="...">
@@ -465,14 +462,14 @@
 
     <!-- Experiencias de egresados -->
     <section class="w-100" style="padding: 80px 60px;">
-        
+
       <div id="carouselExampleControls_2" class="carousel carousel-dark slide " data-bs-ride="carousel">
       <div class="carousel-inner">
-      <h2 style="color:var(--cl3)" class="pb-3">Experiencias de egresados</h2>
+      <h2 style="color:var(--cl3)" class="pb-3 carousel-title">Experiencias de egresados</h2>
       <div class="carousel-item active">
   
       <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 card-ex">
               <div class="card rounded-4" style="height:400px;" >
                 <img src="/src/img/icons/play.png" class="position-absolute" style="width: 50px; top:50%; left: 50%; transform: translate(-50%, -50%); "  alt="play" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="/src/img/carrusel/video1.png" style="height:400px;" class="card-img-top rounded-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -483,7 +480,7 @@
             </div>
           </div>
               
-          <div class="col-lg-4">
+          <div class="col-lg-4 card-ex">
               <div class="card rounded-4" style="height:400px;" >
                 <img src="/src/img/icons/play.png" class="position-absolute" style="width: 50px; top:50%; left: 50%; transform: translate(-50%, -50%); "  alt="play" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="/src/img/carrusel/video2.png" style="height:400px;" class="card-img-top rounded-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -494,7 +491,7 @@
             </div>
           </div>
               
-          <div class="col-lg-4">
+          <div class="col-lg-4 card-ex">
               <div class="card rounded-4" style="height:400px;" >
                 <img src="/src/img/icons/play.png" class="position-absolute" style="width: 50px; top:50%; left: 50%; transform: translate(-50%, -50%); "  alt="play" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="/src/img/carrusel/video3.png" style="height:400px;" class="card-img-top rounded-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -511,7 +508,7 @@
   
       <div class="carousel-item">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 card-ex">
               <div class="card rounded-4" style="height:400px;" >
                 <img src="/src/img/icons/play.png" class="position-absolute" style="width: 50px; top:50%; left: 50%; transform: translate(-50%, -50%); "  alt="play" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="/src/img/carrusel/video1.png" style="height:400px;" class="card-img-top rounded-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -522,7 +519,7 @@
             </div>
           </div>
               
-          <div class="col-lg-4">
+          <div class="col-lg-4 card-ex">
               <div class="card rounded-4" style="height:400px;" >
                 <img src="/src/img/icons/play.png" class="position-absolute" style="width: 50px; top:50%; left: 50%; transform: translate(-50%, -50%); "  alt="play" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="/src/img/carrusel/video2.png" style="height:400px;" class="card-img-top rounded-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -533,7 +530,7 @@
             </div>
           </div>
               
-          <div class="col-lg-4">
+          <div class="col-lg-4 card-ex">
               <div class="card rounded-4" style="height:400px;" >
                 <img src="/src/img/icons/play.png" class="position-absolute" style="width: 50px; top:50%; left: 50%; transform: translate(-50%, -50%); "  alt="play" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="/src/img/carrusel/video3.png" style="height:400px;" class="card-img-top rounded-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -569,18 +566,20 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
       <div class="modal-dialog">
-        <div class="modal-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/pZFw6AefPJU?si=J8K-XJBYOpI4xWjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="modal-content" >
+          <iframe  width="560" height="315" src="https://www.youtube.com/embed/pZFw6AefPJU?si=J8K-XJBYOpI4xWjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </div>
 
     <!-- Footer -->
-    <footer class="w-100 h-50 d-flex flex-column footer-container">
-      <div class="d-flex flex-row ft-p1 h-50 container-fluid">
-        <img src="/src/img/home-logo.png" alt="logo"  class="">
+    <footer class="w-100 h-50 footer-container">
+      <div class=" ft-p1 container-fluid">
+        <a href="#">
+          <img src="/src/img/home-logo.png" alt="logo"  class="">
+        </a>
         <div class="contactanos-container d-flex flex-row">
           <h6>¡Contátanos! </h6>
           <div class="info-container">

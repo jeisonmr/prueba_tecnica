@@ -16,7 +16,7 @@ background-color: #000000c5;
     transition: .5s;
 }
 .item_nav ul li a {
-    padding: 0 40px !important;
+    padding: 0 1vw !important;
 }
 .divisor{
     height: 100px;
@@ -45,4 +45,10 @@ background-color: #000000c5;
     100% {
       transform:  translateY(100px) !important;
       }
+    }
+    
+    @media (min-width: 1024px) and (max-width:1360px) {
+        .nav_bar_items{
+            font-size: .8vw;
+        }
     }

@@ -2,7 +2,7 @@
     background-color: #16168e;
 }
 .ft-p1{
-    /* border-bottom: 1px solid #131377; */
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -50,7 +50,32 @@
     font-family: var(--fuente_ubuntu);
 }
 .ft-p2 span{
-    font-size: 10px;
+    font-size: 13px;
 }
 
+@media (max-width: 768px) {
+    .ft-p1{
+        flex-direction: column !important;
+        gap: 50px;
+    }
+    .ft-p2 span{
+        font-size: 13px;
+    }
+}
 
+@media (max-width: 425px) {
+    .ft-p1{
+        flex-direction: column !important;
+        gap: 50px;
+    }
+    .ft-p2 span{
+        font-size: 10px;
+        text-align: center;
+    }
+    .contactanos-container h6{
+    font-size: 20px;
+    }
+    .info-container p {
+        font-size: 10px;
+    }
+}

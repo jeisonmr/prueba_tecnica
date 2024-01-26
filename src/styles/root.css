@@ -159,3 +159,22 @@ p {
 .card:hover {
   transform: scale(1.02);
 }
+
+@media (max-width: 768px) {
+  .btn_link {
+    padding: 20px 10px;
+  }
+  .card-nt, .card-ex{
+    margin-bottom: 50px !important;
+  }
+}
+
+@media (max-width: 475px) {
+  .container-btn-carousel{
+    right: -50px !important;
+    top: -10px;
+  }
+  .carousel-title{
+    font-size: 19px;
+  }
+}
