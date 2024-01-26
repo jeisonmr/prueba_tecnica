@@ -160,6 +160,15 @@ p {
   transform: scale(1.02);
 }
 
+@media (max-width:1440px) {
+  .btn_link-left-up {
+    padding: 35px 35px;
+  }
+  .btn_link-left-down {
+      padding: 35px 35px;
+  }
+}
+
 @media (max-width: 768px) {
   .btn_link {
     padding: 20px 10px;
@@ -167,6 +176,9 @@ p {
   .card-nt, .card-ex{
     margin-bottom: 50px !important;
   }
+  .container-btn_link{
+    top: 70%;
+}
 }
 
 @media (max-width: 475px) {

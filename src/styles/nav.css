@@ -21,11 +21,16 @@ background-color: #000000c5;
 .divisor{
     height: 100px;
     color: #ffffff !important;
-}
-.nav-logo__img{
+}.nav-logo__img{
     width: 200px;
 }
-
+.span_logos{
+    font-size: 35px ;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
 .btn_form::before{
     content: url('/src/img/icons/chat-square-dots-fill.svg');
     animation: sms .5s;
@@ -47,8 +52,41 @@ background-color: #000000c5;
       }
     }
     
-    @media (min-width: 1024px) and (max-width:1360px) {
-        .nav_bar_items{
-            font-size: .8vw;
-        }
+@media (max-width: 1440px){
+.nav_bar_items{
+    font-size: 15px;
+}
+.span_logos{
+    font-size: 25px ;
+}
+.nav-logo__img{
+    width: 150px;
+}
+}
+@media (max-width: 1360px){
+    .nav_bar_items{
+        font-size: 13px;
     }
+    .span_logos{
+        font-size: 28px ;
+    }
+    .nav-logo__img{
+        width: 150px;
+    }
+}
+@media (max-width: 768px){
+    .span_logos{
+        font-size: 32px ;
+    }
+    .nav-logo__img{
+        width: 200px;
+    }
+}
+@media (max-width: 425px){
+    .span_logos{
+        font-size: 25px ;
+    }
+    .nav-logo__img{
+        width: 150px;
+    }
+}
