@@ -16,7 +16,6 @@ ul,
 a,
 p {
   list-style: none;
-  /* font-family: 'ubuntu', 'sans-serif'; */
 }
 
 /* Boton llamado a la acción por sección */
@@ -160,7 +159,12 @@ p {
   transform: scale(1.02);
 }
 
-@media (max-width:1440px) {
+/* Modal de programas */
+.card-nt-programas{
+  margin-bottom: 50px;
+}
+
+@media (max-width:1545px) {
   .btn_link-left-up {
     padding: 35px 35px;
   }
@@ -190,3 +194,5 @@ p {
     font-size: 19px;
   }
 }
+
+slide, slide-up, slide-down, slide-right, slide-left, zoom
